@@ -1,0 +1,80 @@
+* { /* retira as configurações padrão do navegador, aí basta atribuirmos os valores que desejamos // SEMPRE COLOCAMOS NO INICIO DE NOSSAS APLICAÇÕES */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1510711547938-04fb9010e471?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* vai cobrir todo o espaço do body com a imagem */
+    height: 100vh; /* altura = partir a tela em 100 pedaços na vertical */
+    width: 100vw; /* largura = partir a tela em 100 pedaços na horizontal */
+    display: flex;
+    align-items: center; /* alinha meu item ao centro na vertical */
+    justify-content: center; /* justifica meu item ao centro na horizontal */
+}
+
+.caixa-maior {
+    background-color: #926243;
+    opacity: 0.8; /* transparência */
+    width: 95%; /* largura */
+    max-width: 450px; /* máximo que vai pode crescer de largura */
+    border-radius: 25px; /* arredondar borda */
+    padding: 20px;
+    
+}
+
+.lupa {
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: #ff9d70;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right; /* botão flutue para a direita */
+}
+
+button:hover {
+    background-color:#926243;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ff9d70;
+    color: white;
+    width: calc(100% - 100px);
+    font-size: 19px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.cidade {
+    color: white;
+    font-size: 28px;
+    
+}
+
+.graus {
+    color: white;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.umidade {
+    color: white;
+    margin-top: 30px;
+}
